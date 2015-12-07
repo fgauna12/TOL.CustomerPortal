@@ -1,0 +1,16 @@
+﻿<div class="container">
+    <div class="">
+        <ol class="breadcrumb">
+            <li ng-class="{'active': vm.currentStep === 0}"><a ui-sref="steps.general">General</a></li>
+            <li ng-class="{'active': vm.currentStep === 1}"><a ui-sref="steps.deliveryInformation">Delivery Information</a></li>
+            <li ng-class="{'active': vm.currentStep === 2}"><a ui-sref="steps.terms">Terms & Conditions</a></li>
+            <li ng-class="{'active': vm.isDone()}"><a ui-sref="steps.done">Finished</a></li>
+        </ol>
+    </div>
+
+    <div ui-view ng-animate-children></div>
+
+    <div class="row m clearfix" ng-show="!vm.isDone()">
+        <button class="btn btn-success pull-right" ng-click="vm.nextStep()">Next Step <i class="fa fa-arrow-right"></i></button>
+    </div>
+</div>

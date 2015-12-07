@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "TOL.CustomerPortal"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-TOL.CustomerPortal-af7026b2-c118-4ef6-b600-b27076daff53;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

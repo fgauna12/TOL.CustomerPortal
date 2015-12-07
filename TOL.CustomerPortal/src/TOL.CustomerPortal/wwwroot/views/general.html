@@ -1,0 +1,155 @@
+﻿<div class="container">
+    <!-- General Information -->
+    <div class="panel panel-default">
+        <div class="panel-heading">General Information</div>
+        <div class="panel-body">
+            <form class="form-horizontal" name="generalInformationForm" role="form" novalidate>
+                <div class="form-group">
+                    <label for="firstNameInput" class="col-sm-2 control-label">First Name </label>
+                    <div class="col-sm-10">
+                        <input type="text" id="firstNameInput" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastNameInput" class="col-sm-2 control-label">Last Name </label>
+                    <div class="col-sm-10">
+                        <input type="text" id="lastNameInput" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ssnInput" class="col-sm-2 control-label">Social Security Number</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="ssnInput" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="educationSelect" class="col-sm-2 control-label">Highest Education Achieved</label>
+                    <div class="col-sm-10">
+                        <select id="educationSelect" class="form-control">
+                            <option>High School/GED</option>
+                            <option>Associate's or Vocational Degree</option>
+                            <option>Bachelor's Degree</option>
+                            <option>Master's Degree</option>
+                            <option>Doctorate</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hospitalInput" class="col-sm-2 control-label">Address </label>
+                    <div class="col-sm-10">
+                        <input type="text" id="hospitalInput" class="form-control" placeholder=""/>
+                    </div>
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <input type="text" class="form-control" placeholder="Apt Number, etc."/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cityInput" class="col-sm-2 control-label">City </label>
+                    <div class="col-sm-10 form-inline">
+                        <input id="cityInput" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="stateInput" class="col-sm-2 control-label">State </label>
+                    <div class="col-sm-4 form-inline">
+                        <select id="stateInput" class="form-control" ng-model="generalInformationForm.state" ng-init="generalInformationForm.state = 'Florida'">
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                            <option>California</option>
+                            <option>Colorado</option>
+                            <option>Connecticut</option>
+                            <option>Delaware</option>
+                            <option>Florida</option>
+                            <option>Georgia</option>
+                            <option>Hawaii</option>
+                            <option>Idaho</option>
+                            <option>Illinois</option>
+                            <option>Indiana</option>
+                            <option>Iowa</option>
+                            <option>Kansas</option>
+                            <option>Kentucky</option>
+                            <option>Louisiana</option>
+                            <option>Maine</option>
+                            <option>Maryland</option>
+                            <option>Massachusetts</option>
+                            <option>Michigan</option>
+                            <option>Minnesota</option>
+                            <option>Mississippi</option>
+                            <option>Missouri</option>
+                            <option>Montana Nebraska</option>
+                            <option>Nevada</option>
+                            <option>New Hampshire</option>
+                            <option>New Jersey</option>
+                            <option>New Mexico</option>
+                            <option>New York</option>
+                            <option>North Carolina</option>
+                            <option>North Dakota</option>
+                            <option>Ohio</option>
+                            <option>Oklahoma</option>
+                            <option>Oregon</option>
+                            <option>Pennsylvania</option>
+                            <option>Rhode Island</option>
+                            <option>South Carolina</option>
+                            <option>South Dakota</option>
+                            <option>Tennessee</option>
+                            <option>Texas</option>
+                            <option>Utah</option>
+                            <option>Vermont</option>
+                            <option>Virginia</option>
+                            <option>Washington</option>
+                            <option>West Virginia</option>
+                            <option>Wisconsin</option>
+                            <option>Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="telInput" class="col-sm-2 control-label">Phone Number</label>
+                    <div class="col-sm-10">
+                        <input type="tel" id="telInput" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" id="emailInput" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="occupationInput" class="col-sm-2 control-label">Occupation</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="occupationInput" class="form-control"/>
+                    </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                    <label for="emergencyContacntInput" class="col-sm-2 control-label">Emergency Contact</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="emergencyContacntInput" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyContactPhoneInput" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-10">
+                        <input type="tel" id="emergencyContactPhoneInput" class="form-control"/>
+                    </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                    <label for="husbandInput" class="col-sm-2 control-label">Husband/Father of Baby</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="husbandInput" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="husbandPhoneInput" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-10">
+                        <input type="tel" id="husbandPhoneInput" class="form-control"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
